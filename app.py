@@ -1,5 +1,5 @@
 import streamlit as st
-import time
+
 """
 ## Web scraping on Streamlit Cloud with Selenium
 
@@ -31,7 +31,6 @@ with st.echo():
     options.add_argument("--headless")
 
     driver = get_driver()
-    driver.get("https://www.milanuncios.com/anuncios-usuario/amando-10403766.htm?pagina=1&limite=15&origin=pagination")
-    time.sleep(5)
-    
+    driver.get("http://example.com")
+
     st.code(driver.page_source)
