@@ -31,7 +31,7 @@ with st.echo():
     options.add_argument("--headless")
 
     driver = get_driver()
-    driver.get("https://www.milanuncios.com/anuncios-usuario/amando-10403766.htm?pagina=1&limite=15&origin=pagination")
+    driver.get("https://www.google.es/")
     time.sleep(3)
     
     st.code(driver.page_source)
